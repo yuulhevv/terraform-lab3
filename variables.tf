@@ -21,8 +21,7 @@ variable "web_port" {
  type = number
  validation {
  condition = var.web_port >= 1024 && var.web_port <= 65535
- error_message = "Помилка: Порт повинен знаходитись у безпечному непривілейованому діапазоні 
-(1024-65535)."
+ error_message = "Помилка: Порт повинен знаходитись у безпечному непривілейованому діапазоні (1024-65535)."
  }
 }
 variable "apache_server_name" {
